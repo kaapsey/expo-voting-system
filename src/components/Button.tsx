@@ -3,7 +3,7 @@ import React from 'react';
 type propsType = {
   type: 'button' | 'submit' | 'reset' | undefined;
   colorScheme: string;
-  handleClick: React.MouseEventHandler;
+  handleClick: () => void;
   children: React.ReactNode;
 };
 
@@ -32,6 +32,7 @@ const Button = ({
       className={`font-sans text-white font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none ${getColorScheme(
         colorScheme
       )}`}
+      onClick={handleClick}
     >
       {children}
     </button>

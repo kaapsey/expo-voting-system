@@ -2,15 +2,20 @@
 
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      colors: {
+        dark: {
+          100: '#113A4D',
+          200: '#05182B',
+        },
+      },
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'],
-        custom: ['Aldrich', 'sans-serif'],
+        sans: ['Open Sans'],
+        custom: ['Aldrich'],
       },
     },
   },
