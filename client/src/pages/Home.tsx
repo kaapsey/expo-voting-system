@@ -1,7 +1,15 @@
+import { useNavigate } from 'react-router-dom';
+
 // components
 import Button from '../components/Button';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleScan = () => {
+    navigate('/scan');
+  };
+
   return (
     <main
       className='bg-cover bg-center w-screen h-screen flex flex-col justify-center items-center gap-8 text-white relative font-custom font-semibold'
@@ -11,11 +19,7 @@ const Home = () => {
     >
       <div className='flex flex-col items-center gap-4'>
         <p className='text-3xl'>Are you ready to vote ?</p>
-        <Button
-          type='button'
-          colorScheme='green'
-          handleClick={() => console.log('navigate to scanning')}
-        >
+        <Button type='button' colorScheme='green' handleClick={handleScan}>
           Let's Go
         </Button>
       </div>
