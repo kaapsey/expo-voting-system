@@ -14,7 +14,7 @@ const Home = () => {
         <Button
           type='button'
           colorScheme='green'
-          handleClick={() => console.log('asdf')}
+          handleClick={() => console.log('navigate to scanning')}
         >
           Let's Go
         </Button>

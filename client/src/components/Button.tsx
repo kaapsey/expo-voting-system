@@ -1,9 +1,9 @@
 import React from 'react';
 
 type propsType = {
-  type: 'button' | 'submit' | 'reset' | undefined;
-  colorScheme: string;
-  handleClick: () => void;
+  type?: 'button' | 'submit' | 'reset' | undefined;
+  colorScheme?: string;
+  handleClick?: () => void;
   children: React.ReactNode;
 };
 

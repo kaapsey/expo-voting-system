@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     margin: 0;
@@ -24,7 +24,6 @@
     margin-right: 1rem;
     padding: 1rem;
     z-index: 0;
-    cursor: pointer;
 }
 
 .card:before {
@@ -62,9 +61,9 @@
 }
 
 .card-detail-number {
-    background-color: #1e293b;
+    background-color: #1e1b4b;
     padding: 0.75rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;

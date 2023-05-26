@@ -20,4 +20,11 @@ export const projectStalls = [
     stallNumber: 41,
     cover: '',
   },
+  {
+    id: 'sbfddasdfbj4168',
+    name: 'ujasb Game',
+    college: 'GCES',
+    stallNumber: 21,
+    cover: '',
+  },
 ];
