@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-27T08:59:45.067Z",
-    "modified": "2023-05-27T09:23:08.225Z",
+    "modified": "2023-05-27T15:09:56.954Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\":\"xtz1222\",\n  \"description\":\"heelo 2world\",\n  \"stall_no\":\"5\",\n  \"cover_image\":\"imagepath\",\n  \"members\":[\n    {\n      \"name\":\"yogesh\",\n      \"role\":\"leader\"\n    },\n    {\n      \"name\":\"xx\"\n    }\n    \n    ]\n  \n}",
+      "raw": "{\n  \"name\":\"gandu\",\n  \"description\":\"heelo 2world\",\n  \"stall_no\":\"5\",\n  \"cover_image\":\"imagepath\",\n  \"members\":[\n    {\n      \"name\":\"yogesh\",\n      \"role\":\"leader\"\n    },\n    {\n      \"name\":\"xx\"\n    }\n    \n    ],\n    \"college\":\"PEC\"\n  \n}",
       "form": []
     },
     "tests": []
@@ -102,12 +102,12 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-05-27T09:52:08.651Z",
-    "modified": "2023-05-27T09:59:10.355Z",
+    "modified": "2023-05-27T15:17:23.789Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"token\":\"dd\",\n  \"voted_projects\":[\"6471cb97c6601756f6e542d4\",\"6471cb97c6601756f6e542d4\",\"6471cb97c6601756f6e542d4\",\"6471cb97c6601756f6e542d4\"\n  ]\n}",
+      "raw": "{\n  \"token_id\":\"hi\",\n  \"token\":\"dddddsa\",\n  \"voted_projects\":[\"6471cb97c6601756f6e542d4\",\"6471cb97c6601756f6e542d4\",\"6471cb97c6601756f6e542d4\"\n  ]\n}",
       "form": []
     },
     "tests": []
