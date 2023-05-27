@@ -38,6 +38,11 @@ const projectSchema = new mongoose.Schema({
         ],
         default: [],
     },
+    college:{
+        type: String,
+        required: true,
+        default: 'GCES'
+    }
 });
 
 

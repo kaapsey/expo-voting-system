@@ -12,6 +12,7 @@ const createProject = {
             name: Joi.string().required(),
             role: Joi.string().valid('leader', 'member'),
         }),
+        college: Joi.string(),
     }),
 };
 
