@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { toJSON } = require('./plugins');
+const { toJSON, paginate } = require('./plugins');
 
 const voteTokenSchema = new mongoose.Schema({
     token : {
@@ -12,22 +12,25 @@ const voteTokenSchema = new mongoose.Schema({
         default: false,
     },
     voted_projects : {
-        type: Array,
-        default: [
+        type: [
             {
                 type : mongoose.SchemaTypes.ObjectId,
                 ref : 'Project',
             },
         ],
-    },
-    expires : {
-        type: Date,
-        required: true,
+        default: [],
     },
 });
 
 // add plugin that converts mongoose to json
 voteTokenSchema.plugin(toJSON);
+voteTokenSchema.plugin(paginate);
+
+voteTokenSchema.statics.isVoteTokenTaken = async function (token, excludeVoteTokenId) {
+    const voteToken = await this.findOne({ token, _id: { $ne: excludeVoteTokenId } });
+    return !!voteToken;
+};
+
 
 /**
  * @typedef VoteToken
