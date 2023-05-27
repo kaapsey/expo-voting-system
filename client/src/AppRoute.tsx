@@ -10,7 +10,7 @@ const AppRoute = () => {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/scan' element={<Scan />} />
-      <Route path='/vote' element={<Vote />} />
+      <Route path='/vote/:tokenId' element={<Vote />} />
     </Routes>
   );
 };
