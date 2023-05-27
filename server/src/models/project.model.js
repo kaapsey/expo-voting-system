@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { toJSON } = require('./plugins');
+const { toJSON, paginate } = require('./plugins');
 
 const projectSchema = new mongoose.Schema({
     name: {
@@ -23,8 +23,7 @@ const projectSchema = new mongoose.Schema({
         default: 0,
     },
     members: {
-        type: Array,
-        default: [
+        type: [
             {
                 name: {
                     type: String,
@@ -33,15 +32,24 @@ const projectSchema = new mongoose.Schema({
                 role: {
                     type: String,
                     enum: ['leader', 'member'],
+                    default: 'member',
                 },
             },
         ],
+        default: [],
     },
 });
 
 
 // add plugin that converts mongoose to json
 projectSchema.plugin(toJSON);
+projectSchema.plugin(paginate);
+
+projectSchema.statics.isNameTaken = async function (name, excludeProjectId) {
+    const project = await this.findOne({ name, _id: { $ne: excludeProjectId } });
+    return !!project;
+};
+
 
 /**
  * 
