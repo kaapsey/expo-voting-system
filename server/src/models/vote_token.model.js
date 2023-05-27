@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const { toJSON, paginate } = require('./plugins');
 
 const voteTokenSchema = new mongoose.Schema({
+    token_id: {
+        type: String,
+        required: true,
+        unique: true,
+    },
     token : {
         type: String,
         required: true,
