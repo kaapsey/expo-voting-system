@@ -13,7 +13,7 @@ const Scan = () => {
 
   const handleScannerResult = (result: string) => {
     if (result) {
-      navigate('/vote');
+      navigate(`/vote/${result}`);
     }
   };
 

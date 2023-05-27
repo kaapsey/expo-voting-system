@@ -1,30 +1,92 @@
-export const projectStalls = [
+import { projectScheme } from './scheme';
+
+export const projectStalls: projectScheme[] = [
   {
-    id: 'sdbj4168',
+    _id: 'asfsdf',
     name: 'Woitr',
-    college: 'GCES',
-    stallNumber: 99,
-    cover: '',
+    description: 'bdfjdnvf',
+    stall_no: 125,
+    cover_image: '',
+    vote_count: 125,
+    members: [
+      {
+        name: 'Arjun',
+        role: 'leader',
+      },
+      {
+        name: 'Alson',
+        role: 'member',
+      },
+      {
+        name: 'Yogesh',
+        role: 'member',
+      },
+    ],
   },
   {
-    id: 'sdbj416sdf8',
-    name: 'Routine Generation',
-    college: 'GCES',
-    stallNumber: 85,
-    cover: '',
+    _id: 'asfsdfasjt',
+    name: 'Woitr',
+    description: 'bdfjdnvf',
+    stall_no: 125,
+    cover_image: '',
+    vote_count: 125,
+    members: [
+      {
+        name: 'Arjun',
+        role: 'leader',
+      },
+      {
+        name: 'Alson',
+        role: 'member',
+      },
+      {
+        name: 'Yogesh',
+        role: 'member',
+      },
+    ],
   },
   {
-    id: 'sbfddbj4168',
-    name: 'Runner Game',
-    college: 'GCES',
-    stallNumber: 41,
-    cover: '',
+    _id: 'asfsddfgsdf',
+    name: 'Woitr',
+    description: 'bdfjdnvf',
+    stall_no: 125,
+    cover_image: '',
+    vote_count: 125,
+    members: [
+      {
+        name: 'Arjun',
+        role: 'leader',
+      },
+      {
+        name: 'Alson',
+        role: 'member',
+      },
+      {
+        name: 'Yogesh',
+        role: 'member',
+      },
+    ],
   },
   {
-    id: 'sbfddasdfbj4168',
-    name: 'ujasb Game',
-    college: 'GCES',
-    stallNumber: 21,
-    cover: '',
+    _id: 'asfsddfasfdgsdf',
+    name: 'Woitr',
+    description: 'bdfjdnvf',
+    stall_no: 125,
+    cover_image: '',
+    vote_count: 125,
+    members: [
+      {
+        name: 'Arjun',
+        role: 'leader',
+      },
+      {
+        name: 'Alson',
+        role: 'member',
+      },
+      {
+        name: 'Yogesh',
+        role: 'member',
+      },
+    ],
   },
 ];

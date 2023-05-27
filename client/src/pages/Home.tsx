@@ -42,7 +42,7 @@ const Home = () => {
     <main
       className='bg-cover bg-center w-screen h-screen flex flex-col justify-center items-center gap-8 text-white relative font-custom font-semibold'
       style={{
-        backgroundImage: 'url(images/home.svg)',
+        backgroundImage: 'url(/images/home.svg)',
       }}
     >
       {isLoading ? (
