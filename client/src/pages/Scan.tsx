@@ -19,18 +19,17 @@ const Scan = () => {
         method: 'POST',
         body: JSON.stringify(b),
         headers: {
-          "Content-Type": "application/json",
-        }
-      })
+          'Content-Type': 'application/json',
+        },
+      });
 
       const data = await res.json();
 
-      if(data.message === 'Token is valid') {
+      if (data.message === 'Token is valid') {
         navigate(`/vote/${result}`);
-      }else {
-        console.log(data.message)
+      } else {
+        console.log(data.message);
       }
-      
     }
   };
 
@@ -47,6 +46,7 @@ const Scan = () => {
 
         <div className='w-[300px] md:w-[500px]'>
           <QrScanner
+            scanDelay={100000000}
             onDecode={(result) => handleScannerResult(result)}
             onError={(error) => handleScannerError(error)}
             hideCount={true}
