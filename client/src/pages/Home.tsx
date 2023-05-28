@@ -11,6 +11,7 @@ const Home = () => {
   const [deadline] = useState('09 Jun 2023 15:00:00');
   const [time, setTime] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [count, setCount] = useState(0);
 
   const getTime = (deadline: string) => {
     const timeLeft = Date.parse(deadline) - Date.now();
@@ -28,7 +29,14 @@ const Home = () => {
     setIsLoading(false);
   };
 
+  const getTotalCount = async () => {
+    const response = await fetch('http://localhost:5000/v1/voting');
+    const data = await response.json();
+    setCount(data.totalCount);
+  };
+
   useEffect(() => {
+    getTotalCount();
     const interval = setInterval(() => getTime(deadline), 1000);
 
     return () => clearInterval(interval);
@@ -61,7 +69,7 @@ const Home = () => {
           </div>
 
           <div className='absolute bottom-2 right-5'>
-            <p className='text-3xl'>Vote Count: 120</p>
+            <p className='text-3xl'>Vote Count: {count}</p>
           </div>
         </>
       )}

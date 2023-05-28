@@ -11,9 +11,26 @@ const Scan = () => {
     navigate(-1);
   };
 
-  const handleScannerResult = (result: string) => {
+  const handleScannerResult = async (result: string) => {
     if (result) {
-      navigate(`/vote/${result}`);
+      const b = { token_id: result };
+
+      const res = await fetch(`http://localhost:5000/v1/voting/scan`, {
+        method: 'POST',
+        body: JSON.stringify(b),
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+
+      const data = await res.json();
+
+      if(data.message === 'Token is valid') {
+        navigate(`/vote/${result}`);
+      }else {
+        console.log(data.message)
+      }
+      
     }
   };
 

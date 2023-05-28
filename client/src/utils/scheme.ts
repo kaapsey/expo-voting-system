@@ -4,7 +4,7 @@ export type memberScheme = {
 };
 
 export type projectScheme = {
-  _id: string;
+  id: string;
   name: string;
   description: string;
   stall_no: number;

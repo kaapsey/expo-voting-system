@@ -24,7 +24,7 @@ const createProject = async (projectBody) => {
  * @returns {Promise<QueryResult>}
  */
 const queryProjects = async (filter, options) => {
-  const projects = await Project.paginate(filter, options);
+  const projects = await Project.find({});
   return projects;
 };
 

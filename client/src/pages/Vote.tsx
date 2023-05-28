@@ -6,9 +6,6 @@ import ProjectCard from '../components/ProjectCard';
 import Button from '../components/Button';
 import Spinner from '../components/Spinner';
 
-// utils
-import { projectStalls } from '../utils/projectStalls';
-
 // scheme
 import { projectScheme } from '../utils/scheme';
 
@@ -29,13 +26,38 @@ export default function Vote() {
     }
   };
 
-  const handleSubmit = () => {
-    console.log(params.tokenId);
-    console.log(selectedProjects);
+  const getProjects = async () => {
+    const response = await fetch('http://localhost:5000/v1/projects');
+    const data = await response.json();
+    setProjects(data);
+  }
+
+  const handleSubmit = async () => {
+    const b = {
+      token_id: params.tokenId,
+      project_id: selectedProjects,
+    };
+    
+    const data = await fetch('http://localhost:5000/v1/voting', {
+      method: 'POST',
+      body: JSON.stringify(b),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+
+    const res = await data.json();
+
+    if (res.message === 'Vote successful') {
+      window.location.href = '/';
+    } else {
+      console.log(res.message);
+    }
   };
 
   useEffect(() => {
-    setProjects(projectStalls);
+    getProjects();
+    // setProjects(projectStalls);
     setIsLoading(false);
   }, []);
 
@@ -56,13 +78,13 @@ export default function Vote() {
                 return (
                   <ProjectCard
                     key={index}
-                    id={project._id}
+                    id={project.id}
                     name={project.name}
                     college={'GCES'}
                     stallNumber={project.stall_no}
                     cover={project.cover_image}
                     handleClick={handleClick}
-                    isSelected={selectedProjects.includes(project._id)}
+                    isSelected={selectedProjects.includes(project.id)}
                     isDisabled={selectedProjects.length > 2}
                   />
                 );

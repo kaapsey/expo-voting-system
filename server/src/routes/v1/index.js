@@ -4,6 +4,7 @@ const userRoute = require('./user.route');
 const docsRoute = require('./docs.route');
 const projectRoute = require('./project.route');
 const voteTokenRoute = require('./vote_token.route');
+const votingRoutes = require('./voting.route');
 const config = require('../../config/config');
 
 const router = express.Router();
@@ -24,6 +25,10 @@ const defaultRoutes = [
   {
     path: '/vote_tokens',
     route: voteTokenRoute,
+  },
+  {
+    path: '/voting',
+    route: votingRoutes,
   }
 ];
 

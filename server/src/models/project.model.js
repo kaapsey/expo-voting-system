@@ -48,7 +48,6 @@ const projectSchema = new mongoose.Schema({
 
 // add plugin that converts mongoose to json
 projectSchema.plugin(toJSON);
-projectSchema.plugin(paginate);
 
 projectSchema.statics.isNameTaken = async function (name, excludeProjectId) {
     const project = await this.findOne({ name, _id: { $ne: excludeProjectId } });
@@ -57,7 +56,7 @@ projectSchema.statics.isNameTaken = async function (name, excludeProjectId) {
 
 
 /**
- * 
+ *
  *  * @typedef Project
  *  */
 const Project = mongoose.model('Project', projectSchema);
