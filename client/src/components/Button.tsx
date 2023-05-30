@@ -4,6 +4,7 @@ type propsType = {
   type?: 'button' | 'submit' | 'reset' | undefined;
   colorScheme?: string;
   handleClick?: () => void;
+  isDisabled?: boolean;
   children: React.ReactNode;
 };
 
@@ -11,6 +12,7 @@ const Button = ({
   type = 'button',
   colorScheme = '',
   handleClick = () => {},
+  isDisabled = false,
   children,
 }: propsType) => {
   const getColorScheme = (color: string) => {
@@ -29,9 +31,12 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`font-sans text-white font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none ${getColorScheme(
-        colorScheme
-      )}`}
+      className={`font-sans text-white font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none ${
+        isDisabled
+          ? 'cursor-not-allowed opacity-50'
+          : 'cursor-pointer opacity-100'
+      } ${getColorScheme(colorScheme)}`}
+      disabled={isDisabled}
       onClick={handleClick}
     >
       {children}
