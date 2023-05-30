@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 // components
 import ProjectCard from '../components/ProjectCard';
@@ -11,6 +12,7 @@ import { projectScheme } from '../utils/scheme';
 
 export default function Vote() {
   const params = useParams();
+  const navigate = useNavigate();
 
   const [projects, setProjects] = useState<projectScheme[]>();
   const [selectedProjects, setSelectedProjects] = useState<string[]>([]);
@@ -30,26 +32,27 @@ export default function Vote() {
     const response = await fetch('http://localhost:5000/v1/projects');
     const data = await response.json();
     setProjects(data);
-  }
+  };
 
   const handleSubmit = async () => {
     const b = {
       token_id: params.tokenId,
       project_id: selectedProjects,
     };
-    
+
     const data = await fetch('http://localhost:5000/v1/voting', {
       method: 'POST',
       body: JSON.stringify(b),
       headers: {
         'Content-Type': 'application/json',
-      }
+      },
     });
 
     const res = await data.json();
 
     if (res.message === 'Vote successful') {
-      window.location.href = '/';
+      toast.success('Thank you for voting');
+      navigate('/');
     } else {
       console.log(res.message);
     }
@@ -93,7 +96,12 @@ export default function Vote() {
           </div>
           <div className='fixed bottom-0 bg-gray-900 w-full py-4 px-6 flex justify-center z-20'>
             <div className='w-full md:w-2/3 flex justify-end'>
-              <Button handleClick={handleSubmit}>Vote</Button>
+              <Button
+                handleClick={handleSubmit}
+                isDisabled={selectedProjects.length <= 0}
+              >
+                Vote
+              </Button>
             </div>
           </div>
         </>

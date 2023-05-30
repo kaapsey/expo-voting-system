@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { QrScanner } from '@yudiel/react-qr-scanner';
+import { toast } from 'react-toastify';
 
 // components
 import Button from '../components/Button';
@@ -28,7 +29,8 @@ const Scan = () => {
       if (data.message === 'Token is valid') {
         navigate(`/vote/${result}`);
       } else {
-        console.log(data.message);
+        toast.error(data.message);
+        navigate('/');
       }
     }
   };

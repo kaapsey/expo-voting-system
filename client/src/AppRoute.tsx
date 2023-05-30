@@ -1,4 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+
+// styles
+import 'react-toastify/dist/ReactToastify.css';
 
 // pages
 import Home from './pages/Home';
@@ -9,11 +13,22 @@ import LuckyDraw from './pages/LuckyDraw';
 const AppRoute = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/scan' element={<Scan />} />
-      <Route path='/vote/:tokenId' element={<Vote />} />
-      <Route path='/luckydraw' element={<LuckyDraw />} />
+      <Route element={<PortalWrapper />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/scan' element={<Scan />} />
+        <Route path='/vote/:tokenId' element={<Vote />} />
+        <Route path='/luckydraw' element={<LuckyDraw />} />
+      </Route>
     </Routes>
+  );
+};
+
+const PortalWrapper = () => {
+  return (
+    <>
+      <ToastContainer theme='dark' autoClose={3000} position='top-center' />
+      <Outlet />
+    </>
   );
 };
 
