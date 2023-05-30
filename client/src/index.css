@@ -6,6 +6,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --translate-1-inital: 0px;
+    --translate-1-final: 0px;
+    --translate-2-inital: 0px;
+    --translate-2-final: 0px;
+    --translate-3-inital: 0px;
+    --translate-3-final: 0px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +25,7 @@
     display: none;
 }
 
+/* projectCard */
 .card {
     position: relative;
     display: flex;
@@ -84,4 +94,29 @@
 .card-detail-text>.subtitle {
     font-size: 0.75rem;
     margin: 0;
+}
+
+@keyframes spin-1 {
+    0% {
+        transform: translateY(var(--translate-1-inital));
+    }
+    100% {
+        transform: translateY(var(--translate-1-final));
+    }
+}
+@keyframes spin-2 {
+    0% {
+        transform: translateY(var(--translate-2-inital));
+    }
+    100% {
+        transform: translateY(var(--translate-2-final));
+    }
+}
+@keyframes spin-3 {
+    0% {
+        transform: translateY(var(--translate-3-inital));
+    }
+    100% {
+        transform: translateY(var(--translate-3-final));
+    }
 }
