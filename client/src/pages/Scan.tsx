@@ -48,7 +48,6 @@ const Scan = () => {
 
         <div className='w-[300px] md:w-[500px]'>
           <QrScanner
-            scanDelay={100000000}
             onDecode={(result) => handleScannerResult(result)}
             onError={(error) => handleScannerError(error)}
             hideCount={true}

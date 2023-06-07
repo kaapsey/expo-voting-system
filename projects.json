@@ -1,0 +1,423 @@
+[
+  {
+    "name": "Woitr",
+    "description": "Restaurant and Hotel management system",
+    "stall_no": 1,
+    "members": [
+      {
+        "name": "Arjun Adhikari",
+        "role": "leader"
+      },
+      {
+        "name": "Alson Garbuja"
+      },
+      {
+        "name": "Bibash Thapa Magar"
+      },
+      {
+        "name": "Yogesh Thapa"
+      }
+    ]
+  },
+  {
+    "name": "Paathshala",
+    "description": "School management system",
+    "stall_no": 2,
+    "members": [
+      {
+        "name": "Asmit Nepali",
+        "role": "leader"
+      },
+      {
+        "name": "Shreejan Pandit"
+      }
+    ]
+  },
+  {
+    "name": "E GCES",
+    "description": "A virtual tour of GCES in game",
+    "stall_no": 3,
+    "members": [
+      {
+        "name": "Bigyan Bista",
+        "role": "leader"
+      }
+    ]
+  },
+  {
+    "name": "Career Finder",
+    "description": "A application for finding career opportunities",
+    "stall_no": 4,
+    "members": [
+      {
+        "name": "Abiral Pokhrel",
+        "role": "leader"
+      },
+      {
+        "name": "Arun Khatri"
+      },
+      {
+        "name": "Milan Chhetri"
+      }
+    ]
+  },
+  {
+    "name": "Baghchal",
+    "description": "Classic baghchal game made in java",
+    "stall_no": 5,
+    "members": [
+      {
+        "name": "Laxmi Kanta",
+        "role": "leader"
+      },
+      {
+        "name": "Nitesh"
+      },
+      {
+        "name": "Manish"
+      }
+    ]
+  },
+  {
+    "name": "Keysecure",
+    "description": "Keylogger and detector software",
+    "stall_no": 6,
+    "members": [
+      {
+        "name": "Satya Prakash Dahal",
+        "role": "leader"
+      },
+      {
+        "name": "Bibit Kunwar Chettri"
+      },
+      {
+        "name": "Chettan Pun"
+      },
+      {
+        "name": "Kushal Pariyar"
+      }
+    ]
+  },
+  {
+    "name": "NLP chatbot",
+    "description": "Chatbot with personality of actor Rajesh hamal",
+    "stall_no": 7,
+    "members": [
+      {
+        "name": "Roshan Thapa",
+        "role": "leader"
+      },
+      {
+        "name": "Rajan Subedi"
+      },
+      {
+        "name": "Lalita Gurung"
+      },
+      {
+        "name": "Anushka Thapa"
+      }
+    ]
+  },
+  {
+    "name": "College Champs",
+    "description": "Website for students to take mock test of different subjects",
+    "stall_no": 8,
+    "members": [
+      {
+        "name": "Aadarsh Baral",
+        "role": "leader"
+      },
+      {
+        "name": "Aayush Mulmi"
+      },
+      {
+        "name": "Mimoh Palikhe"
+      }
+    ]
+  },
+  {
+    "name": "Digital Circuit Simulator",
+    "description": "Simulator for logic circuits/boards",
+    "stall_no": 9,
+    "members": [
+      {
+        "name": "Rohit Jalari",
+        "role": "leader"
+      },
+      {
+        "name": "Ishan Subedi"
+      },
+      {
+        "name": "Roshni Subedi"
+      },
+      {
+        "name": "Swachitta Gurung"
+      }
+    ]
+  },
+  {
+    "name": "EDA",
+    "description": "Data analysis before training the model",
+    "stall_no": 10,
+    "members": [
+      {
+        "name": "Bandana Mainali",
+        "role": "leader"
+      }
+    ]
+  },
+  {
+    "name": "Mdhe ko music",
+    "description": "Music player that fetches musics from youtube using RUST",
+    "stall_no": 11,
+    "members": [
+      {
+        "name": "Aayush Shrestha",
+        "role": "leader"
+      }
+    ]
+  },
+  {
+    "name": "Home Automation System",
+    "description": "Mobile application controlled lighting system",
+    "stall_no": 12,
+    "members": [
+      {
+        "name": "Pratham Poudel",
+        "role": "leader"
+      },
+      {
+        "name": "Pramish Adhikari"
+      },
+      {
+        "name": "Niraj Giri"
+      },
+      {
+        "name": "Rijan Thapa"
+      }
+    ]
+  },
+  {
+    "name": "Sign vox ",
+    "description": "Real time american sign language to text system",
+    "stall_no": 13,
+    "members": [
+      {
+        "name": "Sandesh Poudel",
+        "role": "leader"
+      },
+      {
+        "name": "Dilisha Panta"
+      }
+    ]
+  },
+  {
+    "name": "Emotion detection",
+    "description": "Detecting facial expressions using computer vision",
+    "stall_no": 14,
+    "members": [
+      {
+        "name": "Rijan Thapa",
+        "role": "leader"
+      },
+      {
+        "name": "Aayush Sharma"
+      },
+      {
+        "name": "Mohan K.C"
+      },
+      {
+        "name": "Rahul Sen"
+      }
+    ]
+  },
+  {
+    "name": "Portable IOT based fingerprint attendance system",
+    "description": "Portable IOT based fingerprint attendance system",
+    "stall_no": 15,
+    "members": [
+      {
+        "name": "Saloni Pradhan",
+        "role": "leader"
+      },
+      {
+        "name": "Ansu Pradhanang"
+      },
+      {
+        "name": "Sandesh lammchal"
+      },
+      {
+        "name": "Asmita Pun"
+      }
+    ]
+  },
+  {
+    "name": "Remote control wheelchair",
+    "description": "Remote controlled wheelchair prototype",
+    "stall_no": 16,
+    "members": [
+      {
+        "name": "Jayan Adhikari",
+        "role": "leader"
+      },
+      {
+        "name": "Manish K.C."
+      },
+      {
+        "name": "Abinash Basnet"
+      },
+      {
+        "name": "Swarup Poudel"
+      }
+    ]
+  },
+  {
+    "name": "Smart lock",
+    "description": "Smart door lock system using RFID sensors",
+    "stall_no": 17,
+    "members": [
+      {
+        "name": "Ram saran Baniya",
+        "role": "leader"
+      },
+      {
+        "name": "Krishna Khatri"
+      },
+      {
+        "name": "Anil Ghimire"
+      },
+      {
+        "name": "Rajiv Parajuli"
+      }
+    ]
+  },
+  {
+    "name": "Air swipe",
+    "description": "Using Laptop with help of ultrasonic sensor",
+    "stall_no": 18,
+    "members": [
+      {
+        "name": "Santosh Poudel",
+        "role": "leader"
+      },
+      {
+        "name": "Ujjwal B.K."
+      },
+      {
+        "name": "Subarna Poudel "
+      }
+    ]
+  },
+  {
+    "name": "Weapon detection with AI",
+    "description": "Detecting weapons using AI",
+    "stall_no": 19,
+    "members": [
+      {
+        "name": "Adarsha Timilsina",
+        "role": "leader"
+      },
+      {
+        "name": "Saugat Shrestha"
+      }
+    ]
+  },
+  {
+    "name": "Tetris",
+    "description": "Classic tetris game using IOT devices",
+    "stall_no": 20,
+    "members": [
+      {
+        "name": "Alina Subedi",
+        "role": "leader"
+      },
+      {
+        "name": "Aarati kumari Subedi"
+      },
+      {
+        "name": "Namrata sharma"
+      },
+      {
+        "name": "Sushma Adhikari"
+      }
+    ]
+  },
+  {
+    "name": "Hotel GCES",
+    "description": "Hotel booking system",
+    "stall_no": 21,
+    "members": [
+      {
+        "name": "Jayan Adhikari",
+        "role": "leader"
+      },
+      {
+        "name": "Manish K.C."
+      },
+      {
+        "name": "Abinash Basnet"
+      },
+      {
+        "name": "Samir Poudel"
+      }
+    ]
+  },
+  {
+    "name": "Automated water pumping system",
+    "description": "Automatic water pumping system",
+    "stall_no": 22,
+    "members": [
+      {
+        "name": "Mayukh Baral",
+        "role": "leader"
+      },
+      {
+        "name": "Ayush Parajuli"
+      },
+      {
+        "name": "Bishal Koirala"
+      },
+      {
+        "name": "Sudip Paudel"
+      }
+    ]
+  },
+  {
+    "name": "Rainwater detection",
+    "description": "Detection of rainwater",
+    "stall_no": 23,
+    "members": [
+      {
+        "name": "Aayushma Kafle",
+        "role": "leader"
+      },
+      {
+        "name": "Jasmine Timilsina"
+      },
+      {
+        "name": "Sadikshya Adhikari"
+      }
+    ]
+  },
+  {
+    "name": "Web Market Place",
+    "description": "Web Market Place",
+    "stall_no": 24,
+    "members": [
+      {
+        "name": "Umesh Gurung",
+        "role": "leader"
+      },
+      {
+        "name": "Bhuwan Shrestha"
+      },
+      {
+        "name": "Alina Gurung"
+      },
+      {
+        "name": "Puran Rai"
+      }
+    ],
+    "college": "PCM"
+  }
+]

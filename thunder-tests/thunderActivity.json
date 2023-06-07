@@ -4,13 +4,18 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3000/projects",
-    "url": "http://localhost:3000/v1/projects",
+    "url": "http://localhost:5000/v1/projects",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-05-27T08:43:37.693Z",
-    "modified": "2023-05-27T08:54:39.412Z",
+    "modified": "2023-06-07T17:41:08.692Z",
     "headers": [],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"stall_no\": \"\",\n  \"members\": [\n    {\n      \"name\": \"\",\n      \"role\": \"leader\"\n    },\n    {\n      \"name\": \"\"\n    },\n    {\n      \"name\": \"\"\n    }\n  ]\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
