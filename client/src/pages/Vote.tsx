@@ -32,6 +32,7 @@ export default function Vote() {
     const response = await fetch('http://localhost:5000/v1/projects');
     const data = await response.json();
     setProjects(data);
+    setIsLoading(false);
   };
 
   const handleSubmit = async () => {
@@ -60,8 +61,6 @@ export default function Vote() {
 
   useEffect(() => {
     getProjects();
-    // setProjects(projectStalls);
-    setIsLoading(false);
   }, []);
 
   return (
