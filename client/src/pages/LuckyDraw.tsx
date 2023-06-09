@@ -14,12 +14,8 @@ const LuckyDraw = () => {
   const handlePlay = () => {
     setIsBtnDisabled(true);
     let nums: number[] = [];
-    if (slotMachineIndex === 0) {
-      nums = getRandomNumbers(5);
-    } else {
-      nums = getRandomNumbers(9);
-    }
-
+    nums = getRandomNumbers(10);
+    
     setNumbers([
       ...numbers.map((num, i) => {
         if (i === slotMachineIndex) {
