@@ -29,7 +29,7 @@ const ProjectCard = ({
       onClick={() => handleClick(id)}
     >
       <img
-        src={cover || '/images/placeholder.png'}
+        src={'/images/projects/'+cover+'.png' || '/images/placeholder.png'}
         alt='Project Cover'
         className='card-cover'
       />

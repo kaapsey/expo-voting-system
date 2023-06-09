@@ -10,5 +10,6 @@ export type projectScheme = {
   stall_no: number;
   cover_image: string;
   vote_count: number;
+  college: string;
   members: memberScheme[];
 };

@@ -76,13 +76,13 @@ export default function Vote() {
               Please vote for minimum 1 or maximum 3 projects by selecting them
             </p>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
-              {projects?.map((project, index) => {
+              {projects?.sort((a, b) => a.stall_no - b.stall_no).map((project, index) => {
                 return (
                   <ProjectCard
                     key={index}
                     id={project.id}
                     name={project.name}
-                    college={'GCES'}
+                    college={project.college}
                     stallNumber={project.stall_no}
                     cover={project.cover_image}
                     handleClick={handleClick}
